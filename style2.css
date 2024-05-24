@@ -1,0 +1,187 @@
+body {
+    background-color: #080414;
+}
+
+.logo_slogan{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+}
+
+.container__caixa {
+    float: right;
+    display: flex;
+    width: 50%;
+}
+
+.parte_um{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3cm; /* Adiciona um espaçamento de 20px abaixo de cada seção */
+}
+
+.container__titulo {
+    margin-bottom: 10px; /* Adicionando margem inferior para separar do próximo conteúdo */
+}
+
+.container__logo {
+    width: 450px;
+    height: 275px;
+    float: left;
+}
+
+.container__imagem {
+    width: 100%;
+    height:100%;
+    float: right;
+}
+
+.container__botao {
+    display: block; /* Transformando o link em bloco para ocupar toda a largura do contêiner */
+    margin-bottom: 10px; /* Adicionando margem inferior para espaçamento */
+}
+
+.quadro_de_imagens {
+    padding: 2cm;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    margin-bottom: 3cm; /* Adicionando margem inferior para separar do próximo conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    grid-template-rows: repeat(3);
+    gap: 10px; /* Define o espaçamento de 1 cm entre as imagens */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-content: center; /* Centraliza verticalmente */
+}
+
+.item_do_quadro {
+    width: 450px;
+    height: 300px;
+}
+
+.container_forms {
+    margin-top: 20px; /* Adicionando margem superior para separar do conteúdo acima */
+    text-align: center; /* Centralizando o formulário */
+    display: grid; /* Ativa o modelo de layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.formulario_contato {
+    width: 550px; /* Largura do fieldset */
+    border: 2px solid white; /* Borda para visualização */
+    color: white;
+    padding: 20px; /* Adicionando padding para espaçamento interno */
+    box-sizing: border-box; /* Garantindo que o padding não aumente a largura total do elemento */
+    margin-bottom: 5cm; /* Adicionando margem inferior para separar do próximo conteúdo */
+    text-align: left;
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+}
+
+.formulario_contato fieldset {
+    border: none; /* Removendo a borda padrão do fieldset */
+    padding: 0; /* Removendo o padding padrão do fieldset */
+}
+
+
+
+.formulario_contato label {
+    display: block; /* Transformando as labels em blocos para ocupar toda a largura do contêiner */
+    margin-bottom: 5px; /* Adicionando margem inferior para espaçamento entre os campos */
+}
+
+.formulario_contato input,
+.formulario_contato textarea {
+    width: 100%; /* Garantindo que os campos ocupem toda a largura do contêiner */
+    margin-bottom: 10px; /* Adicionando margem inferior para espaçamento entre os campos */
+}
+
+.formulario_contato button {
+    width: 100%; /* Garantindo que o botão ocupe toda a largura do contêiner */
+}
+
+.rodape{
+    color: white;
+    text-align: center;
+}
+
+.fonte_principal{
+    font-size: 50px;
+    display: flex;
+}
+
+.plans{
+    width: 100%;
+    color: white;
+    padding: 8px;
+    margin-bottom: 5cm; /* Adiciona um espaçamento de 20px abaixo de cada seção */
+    text-align: center; /* Centraliza a lista dentro do contêiner */
+    display: grid;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */  
+}
+
+.tabela{
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    padding: 10px; /* Adiciona espaçamento interno às células do cabeçalho */
+    font-weight: bold; /* Deixa o texto do cabeçalho em negrito */
+    text-align: left;
+    font-size: 16px; /* Define o tamanho da fonte da tabela */
+    border-bottom: 1px solid white; /* Adiciona uma borda inferior em todas as células */
+    border-collapse: separate;
+    border-spacing: 20px; /* Define o espaçamento entre as células */
+    
+    
+}
+
+.cabecario {
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    border: 1px solid orange; /* Adiciona borda às células do cabeçalho */
+    padding: 10px; /* Adiciona espaçamento interno às células do cabeçalho */
+    background-color: orange; /* Define a cor de fundo do cabeçalho */
+    font-weight: bold; /* Deixa o texto do cabeçalho em negrito */
+    font-size: 25px;
+  }
+
+  .item_tabela{
+    text-align: left; /* Alinha o texto à esquerda */
+    border: 1px solid white; /* Adiciona borda às células de dados */
+    padding: 10px; /* Adiciona espaçamento interno às células de dados */
+    font-size: 25px;
+    border-bottom: 1px solid white; /* Adiciona uma borda inferior em todas as células */
+    
+}
+
+  .subtitulo_2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  .login{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    padding: 7px 7px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1; /* para garantir que o botão esteja acima da imagem */
+    color: white; /* define a cor do texto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; /* Adiciona negrito */
+  }
+
+  .botoes{
+    background-color: rgba(252, 186, 65, 0.904);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; /* Adiciona negrito */
+    font-size: 14px;
+  }
